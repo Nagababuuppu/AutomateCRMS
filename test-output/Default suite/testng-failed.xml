@@ -5,9 +5,9 @@
     <classes>
       <class name="com.testcases.LoginTest">
         <methods>
-          <include name="verfiylogin" invocation-numbers="0 1 2 3 4"/>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="VerfiyInvalidData" invocation-numbers="0 1 2 3 4"/>
         </methods>
       </class> <!-- com.testcases.LoginTest -->
     </classes>

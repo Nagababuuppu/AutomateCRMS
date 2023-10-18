@@ -13,9 +13,9 @@ import com.Utils.Utils;
 import com.base.Testbase;
 
 public class LoginTest extends Testbase {
-
+    private final String sheet="Sheet1";
 	Login_functionality lf;
-    Utils u;
+     
 	public LoginTest() throws Throwable {
 		super();
 	}
@@ -26,8 +26,7 @@ public class LoginTest extends Testbase {
 
 		Initialization();
 
-		lf = new Login_functionality(driver);
-		 u=new Utils(driver); 
+		lf = new Login_functionality(driver); 
 	}
 
 	@Test
@@ -41,18 +40,17 @@ public class LoginTest extends Testbase {
 		Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard", url);
 
 	}
-	@Test(dataProvider="user",dataProviderClass=LoginTest.class)
-	 public void Verfiylogin(String Username,String Password)
+	@Test(dataProvider="getdata",dataProviderClass=LoginTest.class)
+	 public void VerfiyInvalidData(String Username,String Password)
 	 {
-		 lf.DologinExcel(Username,Password);
+		 lf.DoLoginWithExcel(Username,Password);
 		 String url = driver.getCurrentUrl();
-
-			Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard", url);
+		Assert.assertEquals(url,"http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard");
 	 }
-	@DataProvider(name="user")
+	@DataProvider 
 	public  Object[][] getdata() throws IOException
 	{
-		return u.getdatafromexcel("Sheet1");
+		return Utils.getdatafromexcel(sheet);
 	}
 
 	@AfterMethod
