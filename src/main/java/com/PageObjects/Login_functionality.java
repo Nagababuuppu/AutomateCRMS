@@ -45,20 +45,28 @@ public class Login_functionality extends Testbase {
 	
 	return new Homepage();
 	
+	
+	}
+	
+	public Homepage Dologinwithexcel(String Username, String Password) {
+		
+		username.sendKeys(Username);	
+		password.sendKeys(Password);
+		
+		loginbutton.click();
+		
+		return new Homepage();
 		
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
+	
+	
+	
+	
+	
+	
+	
+	
+
