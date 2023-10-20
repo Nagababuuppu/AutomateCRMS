@@ -19,7 +19,7 @@ public class Utils extends Testbase {
 
 	public static Object[][] ReadDataFromExcel(String Sheetname) throws IOException{
 
-		File file = new File("./src/main/java/com/testdata/crm (1).xlsx");
+		File file = new File("./src/main/java/com/testdata/crm(testdata).xlsx");
 
 		FileInputStream stream = new FileInputStream(file);
 

@@ -25,6 +25,7 @@ public class Testbase {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+
 		try {
 			props.load(file);
 		} catch (IOException e) {
@@ -39,7 +40,7 @@ public class Testbase {
 		if (browsername.equalsIgnoreCase("chrome")) {
 
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\DELL LATITUDE E7470\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+					"C:\\Users\\user\\Downloads\\chromedriver-win64\\chromedriver.exe");
 
 			driver = new ChromeDriver();
 
@@ -48,7 +49,7 @@ public class Testbase {
 		else if (browsername.equalsIgnoreCase("Edge")) {
 
 			System.setProperty("Webdriver.edge.driver",
-					"C:\\Users\\DELL LATITUDE E7470\\Downloads\\chromedriver-win64\\chromedriver-win64\\chromedriver.exe");
+					"C:\\Users\\user\\Downloads\\chromedriver-win64\\chromedriver.exe");
 
 			driver = new EdgeDriver();
 

@@ -48,7 +48,7 @@ public class Login_functionality extends Testbase {
 	
 	}
 	
-	public Homepage Dologinwithexcel(String Username, String Password) {
+	public Homepage Dologinwithexcelsheet(String Username, String Password) {
 		
 		username.sendKeys(Username);	
 		password.sendKeys(Password);

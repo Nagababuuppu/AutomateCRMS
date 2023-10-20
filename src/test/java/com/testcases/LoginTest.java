@@ -41,7 +41,7 @@ public class LoginTest extends Testbase {
 
 		String url = driver.getCurrentUrl();
 
-		Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/", url);
+		Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard", url);
 
 
 	}
@@ -50,11 +50,11 @@ public class LoginTest extends Testbase {
 	@Test (dataProvider = "Data",dataProviderClass = LoginTest.class)   
 	public void verifyloginwithExcel(String Username, String Password) {
 
-		lf.Dologinwithexcel(Username, Password);
+		lf.Dologinwithexcelsheet(Username, Password);
 
 		String url = driver.getCurrentUrl();
 
-		Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/", url);
+		Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard", url);
 
 	}
 
@@ -73,7 +73,7 @@ public class LoginTest extends Testbase {
 
 	public void teardown() {
 
-		//driver.close();
+//		driver.close();
 
 	}
 
