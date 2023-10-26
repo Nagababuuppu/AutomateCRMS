@@ -9,10 +9,14 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.input.WindowsLineEndingInputStream;
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -36,7 +40,7 @@ public class Utils extends Testbase {
 		// TODO Auto-generated constructor stub
 	}
 	 
-	 public  static  String[][]   getdatafromexcel(String sheetname) throws IOException
+	/** public  static  String[][]   getdatafromexcel(String sheetname) throws IOException
 	{
 		File file=new File("./src/main/java/com/testdata/TestDataA.xlsx");
 		FileInputStream fis=new FileInputStream(file);
@@ -55,27 +59,65 @@ public class Utils extends Testbase {
 			
 		}
 		return data; 
-	} 
+	} **/
 	 
 	 // @DataProvider(name="user")
-	public static Object[][] readDataFromExcel(String sheetname) throws IOException {
+	/**public static Object[][] readDataFromExcel(String sheetname) throws IOException {
 	    FileInputStream fis = new FileInputStream("./src/main/java/com/testdata/TestDataA.xlsx");
 	    XSSFWorkbook workbook = new XSSFWorkbook(fis);
 	    XSSFSheet sheet = workbook.getSheet(sheetname);
 	    int numCols = sheet.getRow(0).getLastCellNum();  
-
-	    Object[][] data = new Object[1][numCols];
-
-	    XSSFRow dataRow = sheet.getRow(1);  
+        int rownum=sheet.getPhysicalNumberOfRows();
+	    Object[][] data = new Object[rownum-1][numCols];
+for(int i=1;i<rownum;i++)
+{
+	    XSSFRow dataRow = sheet.getRow(i);  
 	    for (int j = 0; j < numCols; j++) {
 	        XSSFCell cell = dataRow.getCell(j);
 	        DataFormatter format = new DataFormatter();
-	        data[0][j] = format.formatCellValue(cell);
+	        data[i-1][j] = format.formatCellValue(cell);
 	    }
 
-	    return data;
+	    
 	}
- 
+return data;
+	}**/
+	 public static Object[][] readDataFromExcel(String sheetname) throws IOException {
+		    FileInputStream fis = new FileInputStream("./src/main/java/com/testdata/TestDataA.xlsx");
+		    XSSFWorkbook workbook = new XSSFWorkbook(fis);
+		    XSSFSheet sheet = workbook.getSheet(sheetname);
+
+		    int numRows = sheet.getPhysicalNumberOfRows();
+		    int numCols = sheet.getRow(0).getLastCellNum();
+
+		    List<Object[]> dataRows = new ArrayList<>();
+
+		    for (int i = 1; i < numRows; i++) {  
+		        Row row = sheet.getRow(i);
+		        Object[] rowData = new Object[numCols];
+		        boolean isEmptyRow = true;
+
+		        for (int j = 0; j < numCols; j++) {
+		            Cell cell = row.getCell(j);
+		            if (cell != null) {
+		                DataFormatter format = new DataFormatter();
+		                rowData[j] = format.formatCellValue(cell);
+		                if (!cell.toString().trim().isEmpty()) {
+		                    isEmptyRow = false;
+		                }
+		            }
+		        }
+
+		        if (!isEmptyRow) {
+		            dataRows.add(rowData);
+		        }
+		    }
+
+		    Object[][] data = dataRows.toArray(new Object[0][]);
+
+		    return data;
+		}
+
 	 
 	//select by value
     public static void dropdown(WebElement wb,String value)

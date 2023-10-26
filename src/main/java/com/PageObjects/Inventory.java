@@ -126,6 +126,7 @@ public void AddProduct(String Category,String ModelNumber,String Title,String It
 	rackname.sendKeys(RName);
 	POdetails.sendKeys(PODetails);
 	INo.sendKeys(InvoiceNo);
+	Quantity.clear();
 	Quantity.sendKeys(quantity);
 	js.executeScript("arguments[0].click()",PMImage);
 	Utils.fileupload("C:\\Users\\Admin\\Desktop\\Automation Images\\DT-01.jpg");

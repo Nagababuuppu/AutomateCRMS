@@ -50,7 +50,7 @@ public class LoginTest extends Testbase {
 	@DataProvider 
 	public  Object[][] getdata() throws IOException
 	{
-		return Utils.getdatafromexcel(sheet);
+		return Utils.readDataFromExcel(sheet);
 	}
 
 	@AfterMethod

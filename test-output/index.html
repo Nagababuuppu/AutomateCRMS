@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1815410063\testng-customsuite.xml</span>
+                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1101574311\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.testcases.InventoryTest" class="method navigator-link" hash-for-method="addProduct(Hall Room, AR-007, Teapoy, glasstop, Malbro, 10, 80, 45, black, sold, Good, Hyderbad, 10/26/23, 5000...)">addProduct(Hall Room, AR-007, Teapoy, glasstop, Malbro, 10, 80, 45, black, sold, Good, Hyderbad, 10/26/23, 5000...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.testcases.InventoryTest" class="method navigator-link" hash-for-method="addProduct(Bedroom, MS-01, SkWoods, teak-wood, illfordd, 182.9, 35.6, 61, brown, To Be Sold, Excellent, Bangalo...)">addProduct(Bedroom, MS-01, SkWoods, teak-wood, illfordd, 182.9, 35.6, 61, brown, To Be Sold, Excellent, Bangalo...)</a> <!-- method navigator-link -->
@@ -126,6 +131,14 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="addProduct(Hall Room, AR-007, Teapoy, glasstop, Malbro, 10, 80, 45, black, sold, Good, Hyderbad, 10/26/23, 5000...)">
+                  </a> <!-- addProduct(Hall Room, AR-007, Teapoy, glasstop, Malbro, 10, 80, 45, black, sold, Good, Hyderbad, 10/26/23, 5000...) -->
+                  <span class="method-name">addProduct</span>
+                  <span class="parameters">(Hall Room,AR-007,Teapoy,glasstop,Malbro,10,80,45,black,sold,Good,Hyderbad,10/26/23,5000,3.00,51899,MTPY,Malbor furnitures,12A24AGS6,30)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="addProduct(Bedroom, MS-01, SkWoods, teak-wood, illfordd, 182.9, 35.6, 61, brown, To Be Sold, Excellent, Bangalo...)">
                   </a> <!-- addProduct(Bedroom, MS-01, SkWoods, teak-wood, illfordd, 182.9, 35.6, 61, brown, To Be Sold, Excellent, Bangalo...) -->
                   <span class="method-name">addProduct</span>
@@ -137,7 +150,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse--1815410063\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1101574311\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -190,16 +203,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'addProduct')
 data.setCell(0, 2, 'com.testcases.InventoryTest')
-data.setCell(0, 3, 28085);
+data.setCell(0, 3, 34099);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addProduct')
+data.setCell(1, 2, 'com.testcases.InventoryTest')
+data.setCell(1, 3, 34014);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -232,7 +249,15 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addProduct(Bedroom, MS-01, SkWoods, teak-wood, illfordd, 182.9, 35.6, 61, brown, To Be Sold, Excellent, Bangalo...)</span>
-                <span class="method-start">8526 ms</span>
+                <span class="method-start">9264 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">43326 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">addProduct(Hall Room, AR-007, Teapoy, glasstop, Malbro, 10, 80, 45, black, sold, Good, Hyderbad, 10/26/23, 5000...)</span>
+                <span class="method-start">52275 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
