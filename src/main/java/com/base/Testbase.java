@@ -47,8 +47,8 @@ public class Testbase {
 
 		else if (browsername.equalsIgnoreCase("Edge")) {
 
-			System.setProperty("Webdriver.edge.driver",
-					"C:\\Users\\Admin\\Desktop\\selenium\\chromedriver-win64\\chromedriver.exe");
+			System.setProperty("webdriver.edge.driver",
+					"C:\\Users\\pc\\Desktop\\selenium\\edgedriver_win64\\msedgedriver.exe");
 
 			driver = new EdgeDriver();
 

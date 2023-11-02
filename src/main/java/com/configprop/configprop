@@ -1,7 +1,18 @@
-browser=chrome
+browser=edge
 
 url=http://empirehome.myprojectsonline.co.in/
 
 
 username=sureshbabuemp@gmail.com
 password=ZPMHQHIA
+
+Typename=team lead
+Typecode=102
+Changedcode=115
+
+Movefrom=Warehouse
+Moveto=Showroom
+Modelno=MS-01
+Quantity=01
+Note=Dressingtable
+Notes=Dtable
