@@ -39,9 +39,10 @@ public class Homepage extends Testbase{
     	Utils.moveToElement(Inventory);
     	Movestock.click();
     }
-    public void usertype()
-    {
+ 
+	public void usertype() {
     	Utils.moveToElement(master);
     	usertype.click();
-    }
+	}
+ 
 }
