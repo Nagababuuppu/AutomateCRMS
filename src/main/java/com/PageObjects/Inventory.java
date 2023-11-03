@@ -2,6 +2,7 @@ package com.PageObjects;
 
 import java.awt.AWTException;
 
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -9,9 +10,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.Utils.Utils;
-import com.base.Testbase;
+import com.base.TestBase;
+//import com.base.TestBase;
 
-public class Inventory extends Testbase {
+public class Inventory extends TestBase {
 
 	public Inventory() throws Throwable {
 		super();
@@ -115,7 +117,7 @@ public void AddProduct(String Category,String ModelNumber,String Title,String It
 	breadth.sendKeys(Breadth);
 	color.sendKeys(Color);
 	js.executeScript("arguments[0].click()",colorI);
-	Utils.fileupload("C:\\Users\\Admin\\Desktop\\Automation Images\\color.png");
+	Utils.fileupload("C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\New folder\\\\chair1.webp");
 	Utils.dropdownBy(InventoryStatus,Inventory_Status);
 	Utils.dropdownBy(InventoryCondition,Inventory_Condition);
 	Utils.dropdownBy(InventoryLocation,Inventory_Location);
@@ -129,9 +131,9 @@ public void AddProduct(String Category,String ModelNumber,String Title,String It
 	Quantity.clear();
 	Quantity.sendKeys(quantity);
 	js.executeScript("arguments[0].click()",PMImage);
-	Utils.fileupload("C:\\Users\\Admin\\Desktop\\Automation Images\\DT-01.jpg");
+	Utils.fileupload("C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\New folder\\\\chair2.webp");
 	js.executeScript("arguments[0].click()",POImage);
-	Utils.fileupload("C:\\Users\\Admin\\Desktop\\Automation Images\\DT-03.jpg");
+	Utils.fileupload("C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\New folder\\\\chair3.webp");
 	savebtn.click();
 	}
 }

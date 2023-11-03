@@ -1,6 +1,7 @@
 package com.Utils;
 
 import java.awt.AWTException;
+
 import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
@@ -30,9 +31,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 
-import com.base.Testbase;
+import com.base.TestBase;
 
-public class Utils extends Testbase {
+public class Utils extends TestBase {
 	  
 	 
 	public Utils(WebDriver driver) throws Throwable {
@@ -108,7 +109,7 @@ return data;
 		            }
 		        }
 
-		        if (!isEmptyRow) {
+		        if (!isEmptyRow) {	
 		            dataRows.add(rowData);
 		        }
 		    }

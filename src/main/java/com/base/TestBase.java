@@ -10,13 +10,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-public class Testbase {
+public class TestBase {
 
 	public static Properties props;
 	public FileInputStream file;
 	public static WebDriver driver;
-    
-	public Testbase() throws Throwable {
+
+	public TestBase() throws Throwable {
 
 		props = new Properties();
 
@@ -25,11 +25,13 @@ public class Testbase {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+
 		try {
 			props.load(file);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
 	}
 
 	public static void Initialization() {
@@ -37,21 +39,16 @@ public class Testbase {
 		String browsername = props.getProperty("browser");
 
 		if (browsername.equalsIgnoreCase("chrome")) {
-
-			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\Admin\\Desktop\\selenium\\chromedriver-win64\\chromedriver.exe");
+			System.setProperty("webdriver.edge.driver",
+					"C:\\Users\\user\\Downloads\\chromedriver-win64\\chromedriver.exe");
 
 			driver = new ChromeDriver();
 
-		}
-
-		else if (browsername.equalsIgnoreCase("Edge")) {
-
+		} else if (browsername.equalsIgnoreCase("Edge")) {
 			System.setProperty("webdriver.edge.driver",
-					"C:\\Users\\pc\\Desktop\\selenium\\edgedriver_win64\\msedgedriver.exe");
+					"C:\\Users\\user\\OneDrive\\Desktop\\New folder\\New folder\\msedgedriver.exe");
 
 			driver = new EdgeDriver();
-
 		}
 
 		driver.manage().window().maximize();
