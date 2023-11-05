@@ -20,6 +20,10 @@ public class Homepage extends Testbase{
 	WebElement AllInventory;
 	@FindBy(xpath="//ul[@class='treeview-menu']/li/a[contains(text(),'Move Stock')]")
 	WebElement Movestock;
+	@FindBy(xpath="//i[contains(@class,'fa-database')]")
+	WebElement master; 
+		@FindBy(xpath="//a[@href='/Master/Usertypes']")
+		WebElement usertype;
     public Homepage(WebDriver driver)throws Throwable
     {
     	PageFactory.initElements(driver,this);
@@ -35,4 +39,10 @@ public class Homepage extends Testbase{
     	Utils.moveToElement(Inventory);
     	Movestock.click();
     }
+ 
+	public void usertype() {
+    	Utils.moveToElement(master);
+    	usertype.click();
+	}
+ 
 }

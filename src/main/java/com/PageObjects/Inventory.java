@@ -115,7 +115,7 @@ public void AddProduct(String Category,String ModelNumber,String Title,String It
 	breadth.sendKeys(Breadth);
 	color.sendKeys(Color);
 	js.executeScript("arguments[0].click()",colorI);
-	Utils.fileupload("C:\\Users\\user\\OneDrive\\Desktop\\New folder\\chair1.webp");
+	Utils.fileupload("C:\\Users\\Admin\\Desktop\\Automation Images\\color.png");
 	Utils.dropdownBy(InventoryStatus,Inventory_Status);
 	Utils.dropdownBy(InventoryCondition,Inventory_Condition);
 	Utils.dropdownBy(InventoryLocation,Inventory_Location);
@@ -129,9 +129,9 @@ public void AddProduct(String Category,String ModelNumber,String Title,String It
 	Quantity.clear();
 	Quantity.sendKeys(quantity);
 	js.executeScript("arguments[0].click()",PMImage);
-	Utils.fileupload("C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\New folder\\\\chair2.webp");
+	Utils.fileupload("C:\\Users\\Admin\\Desktop\\Automation Images\\DT-01.jpg");
 	js.executeScript("arguments[0].click()",POImage);
-	Utils.fileupload("C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\New folder\\\\chair3.webp");
+	Utils.fileupload("C:\\Users\\Admin\\Desktop\\Automation Images\\DT-03.jpg");
 	savebtn.click();
 	}
 }
