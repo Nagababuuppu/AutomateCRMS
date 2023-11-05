@@ -43,7 +43,7 @@ public class Usertype_test extends Testbase {
 		 lf.Dologin();
 		 h.usertype();
 		 u.edituser();
-		 Thread.sleep(2000);
+		 Thread.sleep(2500);
 		 u.verification();
 	 }
 }

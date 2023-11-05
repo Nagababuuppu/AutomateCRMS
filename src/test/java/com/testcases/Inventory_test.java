@@ -14,7 +14,7 @@ import com.Utils.Utils;
 import com.base.Testbase;
 
 public class Inventory_test extends Testbase {
-	 private final String sheet="Addproduct";
+	 private final String sheet="Addingproduct";
  Login_functionality lf;
  Homepage h; 
  Inventory i;
