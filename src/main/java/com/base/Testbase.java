@@ -15,7 +15,7 @@ public class Testbase {
 	public static Properties props;
 	public FileInputStream file;
 	public static WebDriver driver;
-
+    
 	public Testbase() throws Throwable {
 
 		props = new Properties();
@@ -25,7 +25,6 @@ public class Testbase {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-
 		try {
 			props.load(file);
 		} catch (IOException e) {
@@ -49,7 +48,7 @@ public class Testbase {
 		else if (browsername.equalsIgnoreCase("Edge")) {
 
 			System.setProperty("Webdriver.edge.driver",
-					"C:\\Users\\user\\Downloads\\chromedriver-win64\\chromedriver.exe");
+					"C:\\Users\\user\\OneDrive\\Desktop\\New folder\\msedgedriver.exe");
 
 			driver = new EdgeDriver();
 
