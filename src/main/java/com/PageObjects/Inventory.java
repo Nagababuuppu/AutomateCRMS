@@ -129,9 +129,9 @@ public void AddProduct(String Category,String ModelNumber,String Title,String It
 	Quantity.clear();
 	Quantity.sendKeys(quantity);
 	js.executeScript("arguments[0].click()",PMImage);
-	Utils.fileupload("C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\New folder\\\\chair2.webp");
+	Utils.fileupload("C:\\Users\\\\user\\OneDrive\\Desktop\\New folder\\chair2.webp");
 	js.executeScript("arguments[0].click()",POImage);
-	Utils.fileupload("C:\\\\Users\\\\user\\\\OneDrive\\\\Desktop\\\\New folder\\\\chair3.webp");
+	Utils.fileupload("C:\\Users\\user\\OneDrive\\Desktop\\New folder\\chair2.webp");
 	savebtn.click();
 	}
 }
