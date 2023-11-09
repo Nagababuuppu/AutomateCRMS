@@ -6,7 +6,8 @@ url=http://empirehome.myprojectsonline.co.in/
 username=sureshbabuemp@gmail.com
 password=ZPMHQHIA
 
-Typename=team lead
+
+Typename=test lead
 Typecode=102
 Changedcode=115
 
@@ -16,3 +17,20 @@ Modelno=MS-01
 Quantity=01
 Note=chair
 Notes=chairs
+ Movingstock
+
+
+date=12112023
+name=diwali
+desc=sunday
+
+name=nagababu
+mobile=1234567897
+email=nagababu07.marolix@gmail.com
+wtsappno=1234567897
+orgname=UNB
+orgadd=banglore
+orgno=1234567897
+orgemail=UNB@gmail.com
+gstno=1AGST2346
+changedname=Nagababu uppu
