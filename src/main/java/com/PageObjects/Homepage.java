@@ -80,6 +80,15 @@ public class Homepage extends Testbase{
 		allcustomer.click();
 	}
 	
+	public HolidaysFunctionality holidays() throws Throwable
+	{
+		Utils.moveToElement(master);
+		holidays.click();
+		return new HolidaysFunctionality();
+		
+	}
+	
+	
 	
 	
  
