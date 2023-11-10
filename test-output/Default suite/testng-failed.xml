@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testcases.LoginTest">
+      <class name="com.testcases.Customers_test">
         <methods>
-          <include name="verifyloginwithExcel" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="teardown"/>
+          <include name="editcustomer"/>
+          <include name="deletecustomer"/>
           <include name="setup"/>
+          <include name="verify"/>
+          <include name="addcustomer"/>
         </methods>
-      </class> <!-- com.testcases.LoginTest -->
+      </class> <!-- com.testcases.Customers_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

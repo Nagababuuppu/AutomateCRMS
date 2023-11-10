@@ -69,6 +69,16 @@ public class Homepage extends Testbase{
 		return new USERtype();
 	}
  
+	public void addcustomer()
+	{
+		Utils.moveToElement(customer);
+		addcustomer.click();
+	}
+	public void editcustomer()
+	{
+		Utils.moveToElement(customer);
+		allcustomer.click();
+	}
 	
 	
 	

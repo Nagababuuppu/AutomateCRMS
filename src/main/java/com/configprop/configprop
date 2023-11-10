@@ -8,12 +8,12 @@ password=ZPMHQHIA
 
 
 Typename=test lead
-Typecode=102
-Changedcode=115
+Typecode=107
+Changedcode=117
 
 Movefrom=Warehouse
 Moveto=Showroom
-Modelno=MS-01
+Modelno=MS-02
 Quantity=01
 Note=chair
 Notes=chairs
@@ -23,13 +23,16 @@ Notes=chairs
 date=12112023
 name=diwali
 desc=sunday
+cname=christmasday
+cdate=25122023
+cdesc=monday
 
 name=nagababu
 mobile=1234567897
 email=nagababu07.marolix@gmail.com
 wtsappno=1234567897
 orgname=UNB
-orgadd=banglore
+orgadd=Hyderabad
 orgno=1234567897
 orgemail=UNB@gmail.com
 gstno=1AGST2346
