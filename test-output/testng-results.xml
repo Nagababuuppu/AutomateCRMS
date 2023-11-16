@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-10T17:26:07 IST" name="Default suite" finished-at="2023-11-10T17:26:07 IST" duration-ms="185">
+  <suite started-at="2023-11-16T16:28:35 IST" name="Default suite" finished-at="2023-11-16T16:28:35 IST" duration-ms="216">
     <groups>
     </groups>
-    <test started-at="2023-11-10T17:26:07 IST" name="Default test" finished-at="2023-11-10T17:26:07 IST" duration-ms="185">
-      <class name="com.testcases.Customers_test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Customers_test@223d2c72]" started-at="2023-11-10T17:26:07 IST" name="setup" finished-at="2023-11-10T17:26:07 IST" duration-ms="70" status="FAIL">
+    <test started-at="2023-11-16T16:28:35 IST" name="Default test" finished-at="2023-11-16T16:28:35 IST" duration-ms="216">
+      <class name="com.testcases.Location_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Location_Test@223d2c72]" started-at="2023-11-16T16:28:35 IST" name="setup" finished-at="2023-11-16T16:28:35 IST" duration-ms="88" status="FAIL">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687]]>
@@ -22,7 +22,7 @@ at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.
 at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
 at com.base.Testbase.Initialization(Testbase.java:53)
-at com.testcases.Customers_test.setup(Customers_test.java:24)
+at com.testcases.Location_Test.setup(Location_Test.java:24)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -59,7 +59,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addcustomer()[pri:1, instance:com.testcases.Customers_test@223d2c72]" started-at="2023-11-10T17:26:07 IST" name="addcustomer" finished-at="2023-11-10T17:26:07 IST" duration-ms="0" status="SKIP">
+        <test-method signature="addlocation()[pri:1, instance:com.testcases.Location_Test@223d2c72]" started-at="2023-11-16T16:28:35 IST" name="addlocation" finished-at="2023-11-16T16:28:35 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687]]>
@@ -74,7 +74,7 @@ at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.
 at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
 at com.base.Testbase.Initialization(Testbase.java:53)
-at com.testcases.Customers_test.setup(Customers_test.java:24)
+at com.testcases.Location_Test.setup(Location_Test.java:24)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -110,12 +110,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addcustomer -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Customers_test@223d2c72]" started-at="2023-11-10T17:26:07 IST" name="setup" finished-at="2023-11-10T17:26:07 IST" duration-ms="0" status="SKIP">
+        </test-method> <!-- addlocation -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Location_Test@223d2c72]" started-at="2023-11-16T16:28:35 IST" name="setup" finished-at="2023-11-16T16:28:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="editcustomer()[pri:2, instance:com.testcases.Customers_test@223d2c72]" started-at="2023-11-10T17:26:07 IST" name="editcustomer" finished-at="2023-11-10T17:26:07 IST" duration-ms="0" status="SKIP">
+        <test-method signature="editcustomer()[pri:2, instance:com.testcases.Location_Test@223d2c72]" started-at="2023-11-16T16:28:35 IST" name="editcustomer" finished-at="2023-11-16T16:28:35 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687]]>
@@ -130,7 +130,7 @@ at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.
 at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
 at com.base.Testbase.Initialization(Testbase.java:53)
-at com.testcases.Customers_test.setup(Customers_test.java:24)
+at com.testcases.Location_Test.setup(Location_Test.java:24)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -167,11 +167,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editcustomer -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Customers_test@223d2c72]" started-at="2023-11-10T17:26:07 IST" name="setup" finished-at="2023-11-10T17:26:07 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Location_Test@223d2c72]" started-at="2023-11-16T16:28:35 IST" name="setup" finished-at="2023-11-16T16:28:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="deletecustomer()[pri:3, instance:com.testcases.Customers_test@223d2c72]" started-at="2023-11-10T17:26:07 IST" name="deletecustomer" finished-at="2023-11-10T17:26:07 IST" duration-ms="1" status="SKIP">
+        <test-method signature="deletecustomer()[pri:3, instance:com.testcases.Location_Test@223d2c72]" started-at="2023-11-16T16:28:35 IST" name="deletecustomer" finished-at="2023-11-16T16:28:35 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687]]>
@@ -186,7 +186,7 @@ at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.
 at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
 at com.base.Testbase.Initialization(Testbase.java:53)
-at com.testcases.Customers_test.setup(Customers_test.java:24)
+at com.testcases.Location_Test.setup(Location_Test.java:24)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -223,11 +223,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletecustomer -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Customers_test@223d2c72]" started-at="2023-11-10T17:26:07 IST" name="setup" finished-at="2023-11-10T17:26:07 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Location_Test@223d2c72]" started-at="2023-11-16T16:28:35 IST" name="setup" finished-at="2023-11-16T16:28:35 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify()[pri:4, instance:com.testcases.Customers_test@223d2c72]" started-at="2023-11-10T17:26:07 IST" name="verify" finished-at="2023-11-10T17:26:07 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verify()[pri:4, instance:com.testcases.Location_Test@223d2c72]" started-at="2023-11-16T16:28:35 IST" name="verify" finished-at="2023-11-16T16:28:35 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The path to the driver executable must be set by the webdriver.edge.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/MicrosoftWebDriver. The latest version can be downloaded from http://go.microsoft.com/fwlink/?LinkId=619687]]>
@@ -242,7 +242,7 @@ at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.
 at org.openqa.selenium.edge.EdgeDriverService.createDefaultService(EdgeDriverService.java:70)
 at org.openqa.selenium.edge.EdgeDriver.<init>(EdgeDriver.java:96)
 at com.base.Testbase.Initialization(Testbase.java:53)
-at com.testcases.Customers_test.setup(Customers_test.java:24)
+at com.testcases.Location_Test.setup(Location_Test.java:24)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -279,7 +279,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify -->
-      </class> <!-- com.testcases.Customers_test -->
+      </class> <!-- com.testcases.Location_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
