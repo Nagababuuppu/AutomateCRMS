@@ -13,7 +13,7 @@ Changedcode=117
 
 Movefrom=Warehouse
 Moveto=Showroom
-Modelno=MS-02
+Modelno=MS02
 Quantity=01
 Note=chair
 Notes=chairs
@@ -35,3 +35,6 @@ orgno=1234567897
 orgemail=UNB@gmail.com
 gstno=1AGST2346
 changedname=Nagababu uppu
+
+location=Madhurai
+clocation=kochi
