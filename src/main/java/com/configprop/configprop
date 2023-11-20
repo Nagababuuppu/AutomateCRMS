@@ -17,6 +17,8 @@ Modelno=MS02
 Quantity=01
 Note=chair
 Notes=chairs
+ Movingstock
+
 
 date=12112023
 hname=diwali
@@ -36,5 +38,8 @@ orgemail=UNB@gmail.com
 gstno=1AGST2346
 changedname=Nagababu uppu
 
+
 location=Madhurai
 clocation=kochi
+
+
