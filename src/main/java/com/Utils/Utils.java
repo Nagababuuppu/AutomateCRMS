@@ -162,4 +162,14 @@ return data;
 		r.keyPress(KeyEvent.VK_ENTER);
 		r.keyRelease(KeyEvent.VK_ENTER);
    }
+   
+   public static void scroll(int x,int y) {
+	    JavascriptExecutor jse = (JavascriptExecutor) driver;
+	    jse.executeScript("window.scrollBy("+x+","+y+")");
+	}
+  public static void javaScriptClick(WebElement wb)
+  {
+		JavascriptExecutor jse=(JavascriptExecutor)driver;
+		 jse.executeScript("arguments[0].click()",wb);
+	}
 }
