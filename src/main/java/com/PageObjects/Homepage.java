@@ -104,5 +104,11 @@ public class Homepage extends Testbase {
 		condition.click();
 		return new ConditionData();
   }
+	public ShiftTimings Shifts() throws Throwable
+	{
+		Utils.moveToElement(master);
+		ShiftTimings.click();
+		return new ShiftTimings();
+	}
 
 }
