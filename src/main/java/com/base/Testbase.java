@@ -21,7 +21,7 @@ public class Testbase {
 		props = new Properties();
 
 		try {
-			file = new FileInputStream("./src/main/java/com/configprop/configprop");
+			file = new FileInputStream("./src/main/java/com/configprop");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
