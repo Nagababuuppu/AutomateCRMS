@@ -10,6 +10,8 @@ import com.base.Testbase;
 
 public class Homepage extends Testbase {
 
+	private static final WebElement Company = null;
+
 	public Homepage() throws Throwable {
 		super();
 		// TODO Auto-generated constructor stub
@@ -109,6 +111,17 @@ public class Homepage extends Testbase {
 		Utils.moveToElement(master);
 		ShiftTimings.click();
 		return new ShiftTimings();
+	}
+	public Company Company() throws Throwable
+	{
+		Utils.moveToElement(master);
+		Company.click();
+		return new Company();
+  }
+
+	public void company() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
